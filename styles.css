@@ -3,6 +3,7 @@ body {
     padding: 0;
 }
 
+
 #nav-container {
     width: 1200px;
     margin: 0 auto;
@@ -13,7 +14,10 @@ body {
     height: 70px;
     width: 100%;
     text-align: center;
-    background-color: rgb(192, 39, 39);
+    background-color: rgb(127, 26, 26);
+    position: sticky;
+    top: 0;
+    
 }
 
 .nav-bar img {
@@ -38,13 +42,16 @@ body {
 }
 
 .nav-bar li a {
-    color: whitesmoke;
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
     line-height: 70px;
     padding: 5px 50px;
 
+}
+
+#text-navbar {
+    color:white;
 }
 
 .logo {
@@ -65,3 +72,70 @@ header p {
     justify-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.left-aside {
+    padding-left: 1rem ;
+    margin-right: 1rem;
+    float: left;
+    width: 25%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+    #left-aside-id {
+list-style-type: none;
+    padding: 0;
+}
+
+aside li a, p a {
+    text-decoration: none;
+    color: hsla(0, 66%, 45%, 0.774);
+}
+
+aside li, li a:visited, p a:visited {
+    color: red;
+}
+
+aside li a:hover, a:focus, p a:hover, a:focus {
+    color: hsl(0, 66%, 45%);
+    text-decoration: underline;
+}
+
+aside li a:active, p a:active {
+    color: black;
+}
+
+main {
+    overflow: auto;
+}
+article {
+    float: left;
+    width: 42%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-right: 1px solid hsla(0, 0%, 0%, 0.336);
+    border-left: 1px solid hsla(0, 0%, 0%, 0.336);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.right-aside {
+    padding-right: 1rem;
+    margin-left: 1em;
+    float: right;
+    width: 25%; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#right-aside-id {
+    list-style-type: square;
+    padding-left:1rem;
+    margin-bottom: 0.5rem;
+    margin-top:0.5rem;
+}
+
+#right-aside-id-none {
+    list-style-type: none;
+    padding-left:1rem;
+    margin-bottom: 0.5rem;
+    margin-top:0.5rem;
+}
+
