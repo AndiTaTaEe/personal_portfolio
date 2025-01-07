@@ -7,6 +7,7 @@ body {
 :root {
     --BGCOLOR: rgb(127, 26, 26);
     --BORDERS: 1px solid hsla(0, 0%, 0%, 0.336);
+    --TEXTCOLOR: white;
 }
 
 html {
@@ -61,7 +62,7 @@ html {
 }
 
 #text-navbar {
-    color:white;
+    color:var(--TEXTCOLOR);
 }
 
 .logo {
@@ -69,7 +70,7 @@ html {
 }
 
 
-header h1 {
+header h1{
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -168,14 +169,14 @@ main {
     justify-content: space-evenly;
 }
 
-#reviews {
+.reviews {
     max-width: 25%;
     border: 2px solid black;
     border-radius: 25px;
     padding: 1rem;
 }
 
-#reviews .nowrap-transparent {
+.reviews .transparent {
     color: rgba(0, 0, 0, 0.4);
     margin-bottom: 0;
     margin-top: 0;
@@ -184,7 +185,7 @@ main {
 footer {
     position:sticky;
     background-color: var(--BGCOLOR);
-    color: white;
+    color: var(--TEXTCOLOR);
     text-align: center;
     padding: 0.5rem 0 0.5rem 0;
 }
@@ -218,8 +219,56 @@ footer {
     justify-content: space-evenly;
 }
 
+
 figure p {
     font-size: 1rem;
     text-align: center;
     padding-top: 1rem;
 }
+
+.skills {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 1rem;
+    margin-bottom: 0;
+    font-size: clamp(1rem, 4vh, 2rem);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+    grid-auto-flow: row dense;
+    gap: 1rem;
+    padding: 2rem 2rem 4rem 2rem;
+}
+.skills-grid li {
+    --BGCOLOR: rgb(160, 62, 62);
+    --BORDERS: 1.5px solid hsla(0, 0%, 0%, 0.336);
+    list-style-type: none;
+    padding: 1rem;
+    border: var(--BORDERS);
+    border-radius: 1rem;
+    text-align: center;
+    background-color: var(--BGCOLOR);
+    color: var(--TEXTCOLOR);
+
+    
+}
+
+.skills-grid li:hover {
+    --BGCOLOR: rgb(127, 26, 26);
+    --BORDERS: 1.5px solid hsla(0, 0%, 0%, 0.336);
+    background-color: var(--BGCOLOR);
+    border: var(--BORDERS);
+}
+
+.skills-grid li:nth-child(16) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.skills-grid li:nth-child(17) {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
