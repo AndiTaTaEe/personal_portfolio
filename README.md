@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-Welcome to my personal portfolio! This project showcases my skills, projects, and experiences as a future Computer Engineer.
+Welcome to my personal portfolio! This project showcases my skills, projects, and experiences as a future Computer Engineer. This was a challenge at the start of my front-end journey with the help of roadmap.sh (https://roadmap.sh/projects/portfolio-website).
 
 ## Table of Contents
 
