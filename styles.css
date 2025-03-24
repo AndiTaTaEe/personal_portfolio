@@ -1,7 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900);
+
+
 body {
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Outfit", sans-serif;
 }
 
 :root {
@@ -20,16 +23,21 @@ html {
     height: 70px;
 }
 
+#nav-container img {
+    float: left;
+    padding-left: 2em;
+}
+
 .nav-bar {
     height: 70px;
     width: 100%;
     text-align: center;
     background-color: var(--BGCOLOR);
     position: fixed;
-    top:0;
+    top: 0;
     display: flex;
     flex-direction: row;
-    
+
 }
 
 .nav-bar img {
@@ -54,7 +62,7 @@ html {
 }
 
 .nav-bar li a {
-    font-size: 16px;
+    font-size: 18px;
     text-decoration: none;
     line-height: 70px;
     padding: 5px 50px;
@@ -62,7 +70,7 @@ html {
 }
 
 #text-navbar {
-    color:var(--TEXTCOLOR);
+    color: var(--TEXTCOLOR);
 }
 
 .logo {
@@ -70,11 +78,11 @@ html {
 }
 
 
-header h1{
+header h1 {
     display: flex;
     justify-content: center;
     justify-items: center;
-    padding-top:6rem;
+    padding-top: 6rem;
     margin-bottom: 0;
     font-size: clamp(1.5rem, 5vh, 3rem);
 }
@@ -83,7 +91,7 @@ header p {
     display: flex;
     justify-content: center;
     justify-items: center;
-    
+
 }
 
 main {
@@ -98,7 +106,7 @@ main {
     margin-right: 1rem;
     float: left;
     width: 25%;
-    
+
 }
 
 #left-aside-id {
@@ -133,29 +141,29 @@ main {
     padding-right: 1rem;
     border-right: var(--BORDERS);
     border-left: var(--BORDERS);
-    
+
 }
 
 .right-aside {
     padding-right: 1rem;
     margin-left: 1em;
     float: right;
-    width: 25%; 
-    
+    width: 25%;
+
 }
 
 #right-aside-id {
     list-style-type: square;
-    padding-left:1rem;
+    padding-left: 1rem;
     margin-bottom: 0.5rem;
-    margin-top:0.5rem;
+    margin-top: 0.5rem;
 }
 
 #right-aside-id-none {
     list-style-type: none;
-    padding-left:1rem;
+    padding-left: 1rem;
     margin-bottom: 0.5rem;
-    margin-top:0.5rem;
+    margin-top: 0.5rem;
 }
 
 .padding-left {
@@ -163,7 +171,7 @@ main {
 }
 
 .fake-main {
-    padding:2rem 2rem 4rem 2rem;
+    padding: 2rem 2rem 4rem 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -183,12 +191,13 @@ main {
 }
 
 footer {
-    position:sticky;
+    position: sticky;
     background-color: var(--BGCOLOR);
     color: var(--TEXTCOLOR);
     text-align: center;
     padding: 0.5rem 0 0.5rem 0;
 }
+
 .article-project {
     padding: 1rem;
     display: flex;
@@ -242,6 +251,7 @@ figure p {
     gap: 1rem;
     padding: 2rem 2rem 4rem 2rem;
 }
+
 .skills-grid li {
     --BGCOLOR: rgb(160, 62, 62);
     --BORDERS: 1.5px solid hsla(0, 0%, 0%, 0.336);
@@ -253,7 +263,7 @@ figure p {
     background-color: var(--BGCOLOR);
     color: var(--TEXTCOLOR);
 
-    
+
 }
 
 .skills-grid li:hover {
@@ -267,8 +277,40 @@ figure p {
     grid-column-start: 2;
     grid-column-end: 3;
 }
+
 .skills-grid li:nth-child(17) {
     grid-column-start: 4;
     grid-column-end: 5;
 }
 
+.contact {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.contact li {
+    list-style-type: none;
+}
+
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+    padding: 0.2rem;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: hsl(0, 66%, 45%);
+}
+
+.contact-item a:hover {
+    color: hsl(0, 66%, 45%);
+    text-decoration: underline;
+}
+
+
+    
